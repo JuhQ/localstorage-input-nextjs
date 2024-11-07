@@ -7,10 +7,9 @@ function OpenAIKeyInput() {
     <input
       placeholder="ChatGPT API Key"
       type="text"
-      value={window.localStorage.getItem("key") || key}
+      value={key}
       onChange={({ target }) => {
         setKey(target.value);
-        window.localStorage.setItem("key", target.value);
       }}
     />
   );
